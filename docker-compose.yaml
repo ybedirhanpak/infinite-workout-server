@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  django-boilerplate:
+    build: .
+    command: ./docker/run.sh
+    environment:
+      - APP_DEBUG=True
+      - APP_ENVIRONMENT=development
+    ports:
+      - 8000:8080

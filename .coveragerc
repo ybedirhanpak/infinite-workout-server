@@ -1,0 +1,9 @@
+[run]
+source =
+    app_django
+
+omit =
+    **/migrations/**
+    app_django/asgi.py
+    app_django/settings.py
+    app_django/wsgi.py
