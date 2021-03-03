@@ -5,16 +5,16 @@ services:
     image: postgres
     environment:
       - POSTGRES_PORT=5432
-      - POSTGRES_USER=django-boilerplate
-      - POSTGRES_PASSWORD=django-boilerplate
-      - POSTGRES_DB=django-boilerplate
+      - POSTGRES_USER=infinite-workout-server
+      - POSTGRES_PASSWORD=infinite-workout-server
+      - POSTGRES_DB=infinite-workout-server
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
       - 5432:5432
     networks:
       - net
-  django-boilerplate:
+  infinite-workout-server:
     build: .
     command: ./docker/run.sh
     depends_on:
@@ -26,9 +26,9 @@ services:
       # Postgres credentials
       - APP_POSTGRES_HOST=postgres
       - APP_POSTGRES_PORT=5432
-      - APP_POSTGRES_NAME=django-boilerplate
-      - APP_POSTGRES_USER=django-boilerplate
-      - APP_POSTGRES_PASSWORD=django-boilerplate
+      - APP_POSTGRES_NAME=infinite-workout-server
+      - APP_POSTGRES_USER=infinite-workout-server
+      - APP_POSTGRES_PASSWORD=infinite-workout-server
 
       # Email credentials
       - APP_EMAIL_HOST_USER=your-gmail-address

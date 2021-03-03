@@ -60,7 +60,7 @@ echo -n 'string' | base64
 
 * **Apply secret yaml**
 
-Follow steps in [Google Cloud useful commands](https://github.com/ybedirhanpak/django-boilerplate#google-cloud-useful-commands) to have access to your cluster. Then apply your secret file.
+Follow steps in [Google Cloud useful commands](https://github.com/ybedirhanpak/infinite-workout-server#google-cloud-useful-commands) to have access to your cluster. Then apply your secret file.
 
 ```
 kubectl apply -f key/secret.yaml

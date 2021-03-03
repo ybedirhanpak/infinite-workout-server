@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: django-boilerplate-deployment
+  name: infinite-workout-server-deployment
   labels:
     app: django-app
 spec:
@@ -34,35 +34,35 @@ spec:
             - name: APP_POSTGRES_HOST
               valueFrom:
                 secretKeyRef:
-                  name: django-boilerplate-secret
+                  name: infinite-workout-server-secret
                   key: postgres_host
             - name: APP_POSTGRES_PORT
               valueFrom:
                 configMapKeyRef:
-                  name: django-boilerplate-configmap
+                  name: infinite-workout-server-configmap
                   key: postgres_port
             - name: APP_POSTGRES_NAME
               valueFrom:
                 secretKeyRef:
-                  name: django-boilerplate-secret
+                  name: infinite-workout-server-secret
                   key: postgres_name
             - name: APP_POSTGRES_USER
               valueFrom:
                 secretKeyRef:
-                  name: django-boilerplate-secret
+                  name: infinite-workout-server-secret
                   key: postgres_user
             - name: APP_POSTGRES_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: django-boilerplate-secret
+                  name: infinite-workout-server-secret
                   key: postgres_password
             - name: APP_EMAIL_HOST_USER
               valueFrom:
                 secretKeyRef:
-                  name: django-boilerplate-secret
+                  name: infinite-workout-server-secret
                   key: email_host_user
             - name: APP_EMAIL_HOST_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: django-boilerplate-secret
+                  name: infinite-workout-server-secret
                   key: email_host_password

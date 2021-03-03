@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-  django-boilerplate:
+  infinite-workout-server:
     build: .
     command: ./docker/run.sh
     environment:

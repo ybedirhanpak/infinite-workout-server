@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "django-boilerplate"
+name = "infinite-workout-server"
 version = "0.1.0"
 description = ""
 authors = ["Yahya Bedirhan Pak <y.bedirhanpak@gmail.com>"]

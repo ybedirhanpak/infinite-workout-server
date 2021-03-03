@@ -40,7 +40,7 @@ gcloud container clusters create <cluster-name> \
 Example:
 
 ```
-gcloud container clusters create django-boilerplate-cluster \
+gcloud container clusters create infinite-workout-server-cluster \
 --cluster-version 1.15.12-gke.2 \
 --num-nodes 2 \
 --machine-type e2-medium \
